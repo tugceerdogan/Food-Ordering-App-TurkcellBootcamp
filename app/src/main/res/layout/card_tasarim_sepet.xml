@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:actionBarNavMode="standard">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/satir_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/satir_yemek_fiyat"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="5dp"
+                android:autoText="false"
+                android:background="#FF400D"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Fiyat"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/siparisAdeti"
+                app:layout_constraintStart_toEndOf="@+id/satir_resim"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/siparisAdeti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#FFFFFF"
+                android:text="Sipariş Adeti"
+                android:textColor="#3C3B3B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/satir_resim"
+                android:layout_width="120dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yemek_resimleri" />
+
+            <TextView
+                android:id="@+id/satir_yemek_adi"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:autoText="false"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:text="Yemek adi"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/satir_yemek_fiyat"
+                app:layout_constraintStart_toEndOf="@+id/satir_resim"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/silme_resim"
+                android:layout_width="56dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.531"
+                app:layout_constraintStart_toEndOf="@+id/satir_yemek_adi"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sepettencikar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

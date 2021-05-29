@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/alert_Ad"
+        android:layout_width="123dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="232dp"
+        android:gravity="left|center_vertical"
+        android:text="TextView"
+        android:textColor="#E85A0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resimBuyu" />
+
+    <TextView
+        android:id="@+id/alert_Fiyat"
+        android:layout_width="123dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:gravity="right|center_vertical"
+        android:text="TextView"
+        android:textColor="#E85A0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resimBuyu" />
+
+    <ImageView
+        android:id="@+id/resimBuyu"
+        android:layout_width="279dp"
+        android:layout_height="295dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yemek_resimleri" />
+</androidx.constraintlayout.widget.ConstraintLayout>

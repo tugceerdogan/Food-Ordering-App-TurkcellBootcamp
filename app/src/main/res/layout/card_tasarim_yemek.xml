@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FF8000"
+    android:orientation="vertical"
+    tools:actionBarNavMode="standard">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/satir_card"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/stars"
+                android:layout_width="118dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/satir_resim"
+                app:layout_constraintTop_toBottomOf="@+id/satir_yemek_adi"
+                app:srcCompat="@drawable/stars" />
+
+            <ImageButton
+                android:id="@+id/satir_resim"
+                android:layout_width="120dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yemek_resimleri" />
+
+            <TextView
+                android:id="@+id/satir_yemek_adi"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:text="Yemek adi"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#F3744C"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/satir_resim"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/satir_yemek_fiyat"
+                android:layout_width="127dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yemek fiyatı"
+                android:textColor="#FF5722"
+                android:textSize="21sp"
+                android:typeface="sans"
+                app:layout_constraintStart_toEndOf="@+id/satir_resim"
+                app:layout_constraintTop_toBottomOf="@+id/stars" />
+
+            <ImageView
+                android:id="@+id/sepeteEkle"
+                android:layout_width="56dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="215dp"
+                android:layout_marginLeft="215dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/satir_resim"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sepetekle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
